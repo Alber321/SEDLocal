@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistema de evaluación docente</title>
+
+  <!-- CSS UCOL -->
+  <link href="https://www.ucol.mx/favicon.ico" rel="shortcut icon" />
+  <link href="https://www.ucol.mx/cms/apps/assets/css/apps.min.css" rel="stylesheet" />
+
+  <!-- JS UCOL -->
+  <script>
+    // Variable para obtener el template de la pagina (undefined = DEFAULT para APPS | 1 = plantillas de sistemas internos)
+    var SITE_TEMPLATE = 1;
+
+    // Variable para definir el modo de la pagina (container o container-fluid) | default: container-fluid
+    var CONTAINER_MODE = "container-fluid";
+
+    // Variable para obtener el titulo del sitio (string)
+    var SITE_TITLE = "Dirección General de desarrollo del Personal Académico";
+
+    // Variable para obtener el menu de la pagina a traves de un array de objetos
+    //var SITE_MENU = [];
+
+    // Variable para obtener la descripcion de la pagina (string)
+    // var PAGE_DESCRIPTION = 'For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do. Particular way thoroughly unaffected projection favorable Mrs can be projecting own. Thirty it matter enable become admire in giving.';
+  </script>
+
+  <!-- CSS CUSTOM-->
+  <link rel="stylesheet" href="../styles/fonts.css">
+  <link rel="stylesheet" href="../styles/root.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/classes.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- JS CUSTOM-->
+  <script src="../scripts/reports.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+  </script>
+
+  <!-- CSS MEDIA QUERY -->
+  <link rel="stylesheet" href="../styles/mediaquery.css">
+</head>
+
+<body>
+  <main class="container-md py-4 px-4" id="content">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <h1>Reporte de evaluación</h1>
+      </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="card-container">
+                <div class="card-image-container">
+                    <img src="../images/user.jpg" alt="User profile picture">
+                </div>
+                <div class="card-text">
+                    <p class="h5">Juan Hernández Madrigal</p>
+                    <p>Facultad de arquitectura y diseño</p>
+                    <p>Diseño gráfico I - 4E</p>
+                    <P>Ene-2013 / Jul-2013</P>
+                    <P>Evaluaron 16 alumnos</P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--OLD CARD
+      <div class="row">
+        <div class="col-3">
+          <img src="../images/user.jpg" class="img-fluid profilePicture" alt="user profile picture">
+        </div>
+        <div class="col-9">
+          <p class="h5 mb-0">Profesor:</p>
+          <p class="mb-2">José María Morelos</p>
+          
+          <p class="h5 mb-0">Ciclo escolar:</p>
+          <p class="mb-2">ENE-2013/JUL-2013</p>
+          
+          <p class="h5 mb-0">Plantel:</p>
+          <p class="mb-2">Facultad de arquitectura y diseño</p>
+          
+          <p class="h5 mb-0">Curso:</p>
+          <p class="mb-2">Diseño gráfico I - 4°E</p>
+          
+          <p class="h5 mb-0">Evaluaron:</p>
+          <p class="mb-2">16 alumnos</p>
+        </div>
+      </div>
+    -->
+
+    
+    <div class="row">
+      <div class="col-12">
+        <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-filter"></i> Filtrar</button>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+          <table class="table border-secondary">
+            <thead class="sticky-top table-light">
+              <tr>
+                <th>Respuestas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>[Alumno] califica el esfuerzo que realizaste en este curso</td>
+                <td>Ninguno</td>
+                <td>Poco</td>
+                <td>Normal</td>
+                <td>Mucho</td>
+                <td>Máximo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </main>
+
+  <!-- JS UCOL -->
+  <script src="https://www.ucol.mx/cms/apps/assets/js/apps.min.js"></script>
+</body>
+
+</html>

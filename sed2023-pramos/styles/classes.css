@@ -1,0 +1,71 @@
+@import "./root.css";
+
+.hidden {
+    display: none;
+}
+
+/* SEMÁFORO */
+.sobresaliente {
+    background-color: var(--sobresaliente) !important;
+}
+
+.competente {
+    background-color: var(--competente) !important;
+}
+
+.suficiente {
+    background-color: var(--suficiente) !important
+}
+
+.regular {
+    background-color: var(--regular) !important;
+}
+
+.basico {
+    background-color: var(--basico) !important;
+}
+
+.insuficiente {
+    background-color: var(--insuficiente) !important;
+}
+
+.borderth {
+    padding: 0 !important;
+}
+
+.border {
+    background-color: black;
+    height: 5px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Subtabla */
+td.td-subtabla {
+    padding: 0; 
+    margin: 0;
+}
+
+table.t-subtabla{
+    margin: 0;
+    border: hidden;
+}
+
+/*separador hr*/
+hr.separador{
+    border-top: 10px solid #000000;
+}
+
+/*párrafo en resultadosEvaluacion*/
+div.interlineado p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.hrr2 {
+    height: 10px;
+    background: #008000;
+    border-radius:0px;
+  }

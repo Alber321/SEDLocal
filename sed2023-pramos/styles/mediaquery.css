@@ -1,0 +1,37 @@
+@media (min-width: 1199.98px) { 
+    /* Bigger h1 in desktop mode*/
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Hide the mobile button (Landing page)*/
+    button[id=mobile]{
+        display: none;
+    }
+}
+
+@media (max-width: 1199.98px) { 
+    button[class=navbar-toggler]{
+        display: none;
+    }
+    
+    /* Hide the burguer menu*/
+    li[class=nav-item]{
+        display: none;
+    }
+
+    /* Fix mobile burguer menu */
+    div[class="container-fluid pe-5 me-4"]{
+        margin: 0 !important;
+        padding: 12px !important;
+    }
+
+    /* Hide a table column (Semaforo)*/
+    #semaforo th:nth-child(4){
+        display: none;
+    }
+
+    #semaforo td:nth-child(4){
+        display: none;
+    }
+}

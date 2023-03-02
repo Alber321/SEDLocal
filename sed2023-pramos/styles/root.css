@@ -1,0 +1,14 @@
+:root {
+    /* GENERAL */
+    --text-default: #3B3B3B;
+    --primary: #CCDB94;
+    --secondary: #5F5EA3;
+
+    /* SEMÁFORO */
+    --sobresaliente: #41baff;
+    --competente: #00ffde;
+    --suficiente: #a7ff96;
+    --regular: #ffea39;
+    --basico: #ffb239;
+    --insuficiente: #ff3939;
+}

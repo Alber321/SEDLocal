@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistema de evaluación docente</title>
+
+  <!-- CSS UCOL -->
+  <link href="https://www.ucol.mx/favicon.ico" rel="shortcut icon" />
+  <link href="https://www.ucol.mx/cms/apps/assets/css/apps.min.css" rel="stylesheet" />
+
+  <!-- JS UCOL -->
+  <script>
+    // Variable para obtener el template de la pagina (undefined = DEFAULT para APPS | 1 = plantillas de sistemas internos)
+    var SITE_TEMPLATE = 1;
+
+    // Variable para definir el modo de la pagina (container o container-fluid) | default: container-fluid
+    var CONTAINER_MODE = "container-fluid";
+
+    // Variable para obtener el titulo del sitio (string)
+    var SITE_TITLE = "Dirección General de desarrollo del Personal Académico";
+
+    // Variable para obtener el menu de la pagina a traves de un array de objetos
+    var SITE_MENU = [{ title: "Ingresar", link: "./pages/menu.html", class: "btn btn-primary font-weight-bold px-5" }];
+
+    // Variable para obtener la descripcion de la pagina (string)
+    // var PAGE_DESCRIPTION = 'For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do. Particular way thoroughly unaffected projection favorable Mrs can be projecting own. Thirty it matter enable become admire in giving.';
+  </script>
+
+  <!-- CSS CUSTOM-->
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/root.css">
+  <link rel="stylesheet" href="./styles/components.css">
+  <link rel="stylesheet" href="./styles/classes.css">
+
+  <!-- JS CUSTOM-->
+  <script src="scripts/index.js" type="module" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+  </script>
+
+  <!-- Media query -->
+  <link rel="stylesheet" href="styles/mediaquery.css">
+</head>
+
+<body>
+  <main class="container-md py-4" id="content">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <h1>Evaluación del desempeño docente</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 px-4">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/tYPeuFcMujo" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-12 px-4">
+        <p>
+          El sistema de evaluación docente busca ayudar a los profesores a
+          mejorar su práctica en el aula, tomando como base la opinión anónima
+          de los estudiantes, el personal directivo de los planteles y el
+          punto de vista del propio docente.
+        </p>
+        <p>
+          Es importante que las opiniones se expresen con respeto y de manera
+          constructiva que nos ayuden a lograr mejores profesores y por lo
+          tanto, una mayor calidad educativa.
+        </p>
+        <p>
+          Para acceder a la página y evaluar a tus profesores registra tu
+          número de cuenta y contraseña.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 px-4 d-grid gap-2">
+        <button id="mobile" type="button" class="btn btn-primary btn-lg">Ingresar</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script src="https://www.ucol.mx/cms/apps/assets/js/apps.min.js"></script>
+</body>
+
+</html>

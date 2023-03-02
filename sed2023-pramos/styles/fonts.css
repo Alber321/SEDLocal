@@ -1,0 +1,8 @@
+body {
+    color: var(--text-default)
+}
+
+h1 {
+    color: var(--secondary);
+    font-weight: 800;
+}

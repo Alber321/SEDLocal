@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejemplo de nueva app para ucol.mx</title>
+		
+		<!-- CSS -->
+		<link href="https://www.ucol.mx/favicon.ico" rel="shortcut icon">
+		<link href="https://www.ucol.mx/cms/apps/assets/css/apps.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../styles/root.css">
+        <link rel="stylesheet" href="../styles/fonts.css">
+		
+		<!-- Respond.js soporte de media queries para Internet Explorer 8 -->
+		<!-- ie8.js EventTarget para cada nodo en Internet Explorer 8 -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/ie8/0.2.2/ie8.js"></script>
+		<![endif]-->
+		<script>
+			// Variables de configuración
+				// Variable para obtener el template de la pagina (undefined = DEFAULT para APPS | 1 = plantillas de sistemas internos)
+            var SITE_TEMPLATE = 1,
+				// Definimos si nuestra pagina web tendrá espacio inferior (true) | default: false
+				SECTION_SUPERIOR = true,
+				// Variable para definir el modo de la pagina (container o container-fluid) | default: container-fluid
+				CONTAINER_MODE = 'container-fluid',
+				// Variable para obtener el titulo del sitio (string)
+            	SITE_TITLE = 'Dirección General de desarrollo del Personal Académico',
+				// Variable para obtener el menu de la pagina a traves de un array de objetos
+				SITE_MENU =  [
+								{ title: "Inicio", link: "../index.html" },
+								{ title: "Administración", link: "#",
+									subMenu: [
+                                        {
+                                            title: "Alumnos a los que imparto clase en el presente ciclo escolar",
+                                            link: "#"
+                                        },
+                                        {
+                                            title: "Avances de la evaluación",
+                                            link: "#"
+                                        },
+                                        {
+                                            title: "Descripción de la semaforización",
+                                            link: "./colors.html"
+                                        },
+                                        {
+                                            title: "Material de consulta",
+                                            link: "#"
+                                        }
+									]
+								},
+								{ title: "Evaluación por alumnos",
+									subMenu: [
+									    {
+                                            title: "Resultados semestrales",
+                                            link: "./reports.html"
+                                        },
+                                        {
+                                            title: "Comentarios",
+                                            link: "./commentarios.html"
+                                        }
+									]
+								},
+								{ title: "Autoevaluaciones", link: "#",
+                                    subMenu: [
+                                        {
+                                            title: "Realizar mi autoevaluación",
+                                            link: "#"
+                                        },
+                                        {
+                                            title: "Ver mi autoevaluación",
+                                            link: "#"
+                                        }
+                                    ]
+                                },
+                                { title: "Reportes", link: "#",
+                                    subMenu: [
+                                        {
+                                            title: "Ver mi histórico",
+                                            link: "./resultadosEvaluacion.html"
+                                        }
+                                    ]
+                                }
+							],
+				// Variable para obtener un array de objetos para construir el breadcrumb de navegacion de la pagina
+				BREADCRUMB_SITE = [
+									
+								],
+				// Variable para obtener un array de objetos para construir el breadcrumb de sesion de la pagina
+				BREADCRUMB_SESSION = [
+										{ title: "FERNANDEZ PALOMINOS PEDRO", tooltip: false }, 
+										{ title: "Salir", link: "#" }
+									],
+				// Variable para obtener el titulo de la pagina (string)
+				PAGE_TITLE = 'Título de la página';
+				// Variable para obtener la descripcion de la pagina (string)
+				// PAGE_DESCRIPTION = 'For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do. Particular way thoroughly unaffected projection favorable Mrs can be projecting own. Thirty it matter enable become admire in giving.';
+		</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+	</head>
+	<body>
+        <main class="container-md py-4" id="content">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>BODY</h1>
+                </div>
+            </div>
+        </main>
+		<!-- JS -->
+		<script src="https://www.ucol.mx/cms/apps/assets/js/apps.min.js"></script>
+    
+	</body>
+</html>

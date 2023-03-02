@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sistema de evaluación docente</title>
+
+    <!-- CSS UCOL -->
+    <link href="https://www.ucol.mx/favicon.ico" rel="shortcut icon" />
+    <link href="https://www.ucol.mx/cms/apps/assets/css/apps.min.css" rel="stylesheet" />
+
+    <!-- JS UCOL-->
+    <script>
+        // Variable para obtener el template de la pagina (undefined = DEFAULT para APPS | 1 = plantillas de sistemas internos)
+        var SITE_TEMPLATE = 1;
+
+        // Variable para definir el modo de la pagina (container o container-fluid) | default: container-fluid
+        var CONTAINER_MODE = "container-fluid";
+
+        // Variable para obtener el titulo del sitio (string)
+        var SITE_TITLE = "Dirección General de desarrollo del Personal Académico";
+
+      // Variable para obtener el menu de la pagina a traves de un array de objetos
+      //let SITE_MENU = [];
+
+      // Variable para obtener la descripcion de la pagina (string)
+      // let PAGE_DESCRIPTION = "";
+    </script>
+
+    <!-- CSS CUSTOM-->
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/root.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/classes.css" />
+    <link rel="stylesheet" href="../styles/mediaquery.css" />
+
+    <!-- JS CUSTOM-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+    </script>
+    <script src="../scripts/semaforo.js" defer></script>
+</head>
+
+<body>
+    <main class="container-md py-4" id="content">
+        <div class="row">
+            <div class="col-12 px-4 text-center">
+                <h1>Descripción de la semaforización</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-4">
+                <table id="semaforo" class="table border-secondary">
+                    <thead class="sticky-top table-light">
+                        <tr>
+                            <th>Lim inf.</th>
+                            <th>Lim sup.</th>
+                            <th>Nivel de desempeño</th>
+                            <th>¿Qué debo hacer?</th>
+                            <th>Color</th>
+                        </tr>
+                        <tr>
+                            <th colspan="5" class="borderth">
+                                <div class="border"></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>100</td>
+                            <td>100</td>
+                            <td>
+                                <p class="h5">Sobresaliente</p>
+                                Soy un profesor que centra su labor en el desarrollo de capacidades en los estudiantes,
+                                experto en mi disciplina y excelente mediador en el encuentro con el conocimiento, que
+                                siempre aplica diversas estrategias, recursos didácticos y de evaluación para el logro
+                                de acciones formativas pertinentes, considerando los principios éticos, la perspectiva
+                                de los derechos humanos y de responsabilidad social.
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Continuar ejerciendo una docencia centrada en el desarrollo de las capacidades
+                                        en los
+                                        estudiantes, responsable y comprometida con el logro de los objetivos formativos
+                                        planteados.
+                                    </li>
+                                    <li>
+                                        Mantenerme actualizado disciplinar y pedagógicamente.
+                                    </li>
+                                    <li>
+                                        Trabajar en equipo, compartiendo mi experiencia con otros profesores para
+                                        potenciar su
+                                        desarrollo integral personal y profesional, en unidad, por una Universidad de
+                                        calidad.
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="sobresaliente"></td>
+                        </tr>
+                        <tr>
+                            <td>90.00</td>
+                            <td>99.99</td>
+                            <td>
+                                <p class="h5">Competente</p>
+                                Soy un profesor que centra su labor en el desarrollo de capacidades en los estudiantes,
+                                experto en mi disciplina y excelente mediador en el encuentro con el conocimiento, que
+                                siempre aplica diversas estrategias, recursos didácticos y de evaluación para el logro
+                                de acciones formativas pertinentes, considerando los principios éticos, la perspectiva
+                                de los derechos humanos y de responsabilidad social.
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        Afinar mi actuación docente, centrada en el desarrollo de las capacidades en los
+                                        estudiantes y comprometida con el logro de los objetivos formativos planteados.
+                                    </li>
+                                    <li>
+                                        Mantenerme actualizado disciplinar y pedagógicamente.
+                                    </li>
+                                    <li>
+                                        Trabajar en equipo, compartiendo con otros profesores nuestras experiencias para
+                                        enriquecer y potenciar nuestro desarrollo integral personal y profesional, en
+                                        unidad, por una Universidad de calidad.
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="competente"></td>
+                        </tr>
+                        <tr>
+                            <td>80.00</td>
+                            <td>89.99</td>
+                            <td>
+                                <p class="h5">Suficiente</p>
+                                <p>
+                                    Soy un profesor que cumple su función profesional. Muestra conocimiento sobre la
+                                    materia, plantea diversas estrategias, recursos didácticos y de evaluación,
+                                    considerando los principios éticos e incorporando elementos de responsabilidad
+                                    social.
+                                </p>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        Mejorar mi desempeño docente, centrándolo en el desarrollo de las capacidades en
+                                        los estudiantes.
+                                    </li>
+                                    <li>
+                                        Actualizarme profesionalmente con el fin de contar con conocimientos
+                                        disciplinares específicos y pedagógicos que me permitan desarrollar las acciones
+                                        formativas pertinentes en mi quehacer docente en atención a las necesidades de
+                                        desarrollo integral de los estudiantes.
+
+                                    </li>
+                                    <li>
+                                        Trabajar en equipo, enriqueciendo mi experiencia con la de otros profesores para
+                                        potenciar mi desarrollo integral personal y profesional, en unidad, por una
+                                        Universidad de calidad.
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="suficiente"></td>
+                        </tr>
+                        <tr>
+                            <td>70.00</td>
+                            <td>79.99</td>
+                            <td>
+                                <p class="h5">Regular</p>
+                                <p>
+                                    Soy un profesor que cumple parcialmente con sus competencias como docente. Mi
+                                    conocimiento sobre la materia, empleo de estrategias y recursos didácticos y de
+                                    evaluación deben mejorar y diversificarse, siempre considerando ambientes y entornos
+                                    del aprendizaje, así como los principios éticos y de responsabilidad social.
+                                </p>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        Entender el significado de ser profesor. Mejorar mis conocimientos disciplinares
+                                        y pedagógicos de manera que me permitan desarrollar e implementar las acciones
+                                        formativas pertinentes en mi quehacer docente.
+                                    </li>
+                                    <li>
+                                        Acercarme, en primera instancia, con el director de mi plantel, coordinador
+                                        académico o el asesor pedagógico, en busca de apoyo que me permita desempeñar
+                                        mis actividades de forma profesional; o bien, a la Dirección General de
+                                        Desarrollo del Personal Académico, donde puedo encontrar opciones de
+                                        capacitación y profesionalización.
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="regular"></td>
+                        </tr>
+                        <tr>
+                            <td>60.00</td>
+                            <td>69.99</td>
+                            <td>
+                                <p class="h5">Básico</p>
+                                <p>
+                                    Soy un profesor que presenta mínima versatilidad en el desarrollo del proceso de
+                                    enseñanza-aprendizaje. Mis áreas de mejora a atenderse a corto plazo son:
+                                    conocimiento de la materia, empleo de estrategias, de recursos didácticos y de
+                                    evaluación, que contribuyan al logro de los objetivos formativos.
+                                </p>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        Entender el significado de ser profesor. Fortalecer mi desempeño docente en sus
+                                        diversas áreas, por tanto necesito participar en un programa de formación
+                                        docente que me permita mejorar mis conocimientos disciplinares y pedagógicos,
+                                        además de centrar mi actuación en el desarrollo de capacidades en los
+                                        estudiantes.
+                                    </li>
+                                    <li>
+                                        Acercarme, en primera instancia, con el director de mi plantel, coordinador
+                                        académico o el asesor pedagógico, en busca de apoyo que me permita desempeñar
+                                        mis actividades de forma profesional; o bien, a la Dirección General de
+                                        Desarrollo del Personal Académico, donde puedo encontrar opciones de
+                                        capacitación y profesionalización.
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="basico"></td>
+                        </tr>
+                        <tr>
+                            <td>0.00</td>
+                            <td>59.99</td>
+                            <td>
+                                <p class="h5">Insuficiente</p>
+                                <p>
+                                    Soy un profesor que requiere apoyo inmediato al no desarrollar una docencia acorde a
+                                    lo establecido en el perfil de las y los docentes de la Universidad de Colima.
+                                </p>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        Valorar mi perfil docente con apoyo de un equipo multidisciplinario.
+                                    </li>
+                                    <li>
+                                        Es indispensable que acuda con el director de mi plantel, coordinador académico
+                                        o el asesor pedagógico, en busca de apoyo, o bien, a la Dirección General de
+                                        Desarrollo del Personal Académico.
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="insuficiente"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS -->
+    <script src="https://www.ucol.mx/cms/apps/assets/js/apps.min.js"></script>
+</body>
+
+</html>

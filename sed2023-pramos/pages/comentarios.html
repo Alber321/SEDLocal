@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejemplo de nueva app para ucol.mx</title>
+		
+		<!-- CSS -->
+		<link href="https://www.ucol.mx/favicon.ico" rel="shortcut icon">
+		<link href="https://www.ucol.mx/cms/apps/assets/css/apps.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/root.css">
+        <link rel="stylesheet" href="../styles/fonts.css">
+        <link rel="stylesheet" href="../styles/classes.css">
+		
+		<!-- Respond.js soporte de media queries para Internet Explorer 8 -->
+		<!-- ie8.js EventTarget para cada nodo en Internet Explorer 8 -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/ie8/0.2.2/ie8.js"></script>
+		<![endif]-->
+		<script>
+			// Variables de configuración
+				// Variable para obtener el template de la pagina (undefined = DEFAULT para APPS | 1 = plantillas de sistemas internos)
+            var SITE_TEMPLATE = 1,
+				// Definimos si nuestra pagina web tendrá espacio inferior (true) | default: false
+				SECTION_SUPERIOR = true,
+				// Variable para definir el modo de la pagina (container o container-fluid) | default: container-fluid
+				CONTAINER_MODE = 'container-fluid pe-5 me-4',
+				// Variable para obtener el titulo del sitio (string)
+            	SITE_TITLE = 'Dirección General de desarrollo del Personal Académico',
+				// Variable para obtener el menu de la pagina a traves de un array de objetos
+				SITE_MENU =  [
+								{ title: "Inicio", link: "../index.html" },
+								{ title: "Administración", link: "#",
+									subMenu: [
+                                        {
+                                            title: "Alumnos a los que imparto clase en el presente ciclo escolar",
+                                            link: "#"
+                                        },
+                                        {
+                                            title: "Avances de la evaluación",
+                                            link: "#"
+                                        },
+                                        {
+                                            title: "Descripción de la semaforización",
+                                            link: "./colors.html"
+                                        },
+                                        {
+                                            title: "Material de consulta",
+                                            link: "#"
+                                        }
+									]
+								},
+								{ title: "Evaluación por alumnos", link: "#",
+									subMenu: [
+									    {
+                                            title: "Resultados semestrales",
+                                            subMenu: [
+                                                {
+                                                    title: "Por materia",
+                                                    link: "#"
+                                                },
+                                                {
+                                                    title: "Por área o carrera",
+                                                    link: "#"
+                                                },
+                                                {
+                                                    title: "Por Plantel",
+                                                    link: "#"
+                                                },
+                                                {
+                                                    title: "Global",
+                                                    link: "#"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            title: "Comentarios",
+                                            subMenu: [
+                                                {
+                                                    title: "Por materia",
+                                                    link: "#"
+                                                },
+                                                {
+                                                    title: "Por área o carrera",
+                                                    link: "#"
+                                                },
+                                                {
+                                                    title: "Por Plantel",
+                                                    link: "#"
+                                                },
+                                                {
+                                                    title: "Global",
+                                                    link: "#"
+                                                }
+                                            ]
+                                        }
+									]
+								},
+								{ title: "Autoevaluaciones", link: "#",
+                                    subMenu: [
+                                        {
+                                            title: "Realizar mi autoevaluación",
+                                            link: "#"
+                                        },
+                                        {
+                                            title: "Ver mi autoevaluación",
+                                            link: "#"
+                                        }
+                                    ]
+                                },
+                                { title: "Reportes", link: "#",
+                                    subMenu: [
+                                        {
+                                            title: "Ver mi histórico",
+                                            link: "#"
+                                        }
+                                    ]
+                                }
+							],
+				// Variable para obtener un array de objetos para construir el breadcrumb de navegacion de la pagina
+				BREADCRUMB_SITE = [
+									
+								],
+				// Variable para obtener un array de objetos para construir el breadcrumb de sesion de la pagina
+				BREADCRUMB_SESSION = [
+										{ title: "FERNANDEZ PALOMINOS PEDRO", tooltip: false }, 
+										{ title: "Salir", link: "#" }
+									],
+				// Variable para obtener el titulo de la pagina (string)
+				PAGE_TITLE = 'Título de la página';
+				// Variable para obtener la descripcion de la pagina (string)
+				// PAGE_DESCRIPTION = 'For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do. Particular way thoroughly unaffected projection favorable Mrs can be projecting own. Thirty it matter enable become admire in giving.';
+		</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+	</head>
+	<body>
+        <main class="container-md py-4" id="content">
+            <div class="row">
+                <div class="col-12 text-center pb-3">
+                    <h1>Comentarios</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-end">
+                    <a href="./menu.html" class="">Regresar</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row p-3">
+                <div class="col-md-9 fw-bolder">
+                    <p>Profesor: PROFESOR PROFESOR</p>
+                    <p>Ciclo escolar: CICLOESCOLAR-CICLOESCOLAR</p>
+                    <p>Plantel: PLANTEL DE PLANTEL</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fjpeg&attachment_token=AMzByC1Kq15LFVQaxKevj3LOTVFUVAca8inHhtIIj5%2FGluHB%2BcC2Nwn0QGc9ESEdqZ1FzxO68aUjvs2KKsr8Wo265th%2FYAulsAJzxInKFUdJLRTqw0iqDcjEft1BpQURd4Mhr11tOdL08%2FrqqGcpKoPxYfKPruRLE2UWlsubftqxsWFrF%2B5WD0Xhxmv65QD63tq2x%2B4bKggRYbhDHiNs44PZRn4WFrkVc3AR2iTju%2FY1AOJ0mfWvUepZVOC13DaFyOnpg1DdFYaLC1KkwdbCLeuel13pRwFUEQ7Iszns1xJi6XzHFI8G2mxub5lenfD3YE8bJzLJ9j9uGciOF73DJDG1OzKmVJZDRRybMPF8i%2BahOOJHgtQ9h%2BTMxfKS0wzSrfrIDB9%2BQxnEzemQ7kx3ay%2BpxoiF4Nssb%2FUZD3e69NzR5AkYpnnkT2ue4XceaIDUdWfk1PVRz0Yt%2Bal4FsUahL2F6eof388ORGKwBzUkv9h3fqbKFokrrGbPkI5E7870eGQasNRLGRJsjMZB%2BDCXg7b6tZBB6yGpL5WZRsoRGK5hpAh4RjAgr4dCPdaK14k1qzU%3D&sz=w512" alt="Foto del profesor">
+                </div>
+            </div>
+            <div class="materias-comentarios card mb-5">
+                <hr class="separador pt-0 mt-0 mb-0">
+                <div class="materia" style="background-color: rgb(236, 236, 236);">
+                    <div class="row px-5 fw-bolder">
+                        <div class="col-12 pt-3">
+                            <p>Programa: LICENCIADO EN DISEÑO GRÁFICO</p>
+                            <P>Curso: DISEÑO GRÁFICO I 1°E</P>
+                            <P>Evaluación: 16 alumnos</P>
+                        </div>
+                    </div>
+                </div>
+                <hr class="separador pt-0 mt-0">
+                <div class="comentarios-loMejor">
+                    <div class="row px-3">
+                        <div class="col-12 pt-2">
+                            <h3 class="text-center p-3 mb-0 bg-info">Lo mejor de este profesor es...</h3>
+                            <table class="table ">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            la enseñanza en sus diferentes materias.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            La dedicación y empeño que pone en sus clases, además de sus conocimientos sobre el área laboral que resultan de uso práctico.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Su experiencia y que la trasmite en su clase.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            tiene mucha experiencia.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Explica bien, muestra interes por los resultados favorables de los proyectos.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Tiene un dominio alto de los temas, explica de manera muy clara y es muy atenta con sus estudiantes.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="comentarios-mejorar">
+                    <div class="row px-3">
+                        <div class="col-12 pt-2">
+                            <h3 class="text-center p-3 bg-warning">Lo que debería de mejorar es ...</h3>
+                            <table class="table">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Siento que falta un poco de tolerancia con respecto a sus visiones personales de temas "delicados" como diversidad sexual y cultural.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            La modulación en la voz.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Su forma de evaluar, en las dos materia que nos imparte nunca queda claro el como evalúa o bajo que criterios, si salimos mal nunca queda claro el por que. apenas esta segunda parcial (en la materia de comunicaciones) estableció porcentajes para la evaluación.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Más compresiva.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Relacionarse más con los alunos. No es seria ni mala onda, pero se nota una relación algo tensa.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Para mí, Nada.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="materias-comentarios card mb-5">
+                <hr class="separador pt-0 mt-0 mb-0">
+                <div class="materia" style="background-color: rgb(236, 236, 236);">
+                    <div class="row px-5 fw-bolder">
+                        <div class="col-12 pt-3">
+                            <p>Programa: LICENCIADO EN DISEÑO GRÁFICO</p>
+                            <P>Curso: HERRAMIENTAS PARA LA ESTRUCTURACION GRAFICA - 2° E</P>
+                            <P>Evaluación: 15 alumnos</P>
+                        </div>
+                    </div>
+                </div>
+                <hr class="separador pt-0 mt-0">
+                <div class="comentarios-loMejor">
+                    <div class="row px-3">
+                        <div class="col-12 pt-2">
+                            <h3 class="text-center p-3 mb-0 bg-info">Lo mejor de este profesor es...</h3>
+                            <table class="table ">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            la enseñanza en sus diferentes materias.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            La dedicación y empeño que pone en sus clases, además de sus conocimientos sobre el área laboral que resultan de uso práctico.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Su experiencia y que la trasmite en su clase.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            tiene mucha experiencia.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Explica bien, muestra interes por los resultados favorables de los proyectos.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Tiene un dominio alto de los temas, explica de manera muy clara y es muy atenta con sus estudiantes.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="comentarios-mejorar">
+                    <div class="row px-3">
+                        <div class="col-12 pt-2">
+                            <h3 class="text-center p-3 bg-warning">Lo que debería de mejorar es ...</h3>
+                            <table class="table">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Siento que falta un poco de tolerancia con respecto a sus visiones personales de temas "delicados" como diversidad sexual y cultural.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            La modulación en la voz.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Su forma de evaluar, en las dos materia que nos imparte nunca queda claro el como evalúa o bajo que criterios, si salimos mal nunca queda claro el por que. apenas esta segunda parcial (en la materia de comunicaciones) estableció porcentajes para la evaluación.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Más compresiva.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Relacionarse más con los alunos. No es seria ni mala onda, pero se nota una relación algo tensa.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Para mí, Nada.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-end">
+                    <a href="./menu.html" class="">Regresar</a>
+                </div>
+            </div>
+        </main>
+		<!-- JS -->
+		<script src="https://www.ucol.mx/cms/apps/assets/js/apps.min.js"></script>
+    
+	</body>
+</html>
