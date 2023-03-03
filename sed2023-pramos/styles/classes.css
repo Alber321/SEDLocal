@@ -69,3 +69,7 @@ div.hrr2 {
     background: #008000;
     border-radius:0px;
   }
+
+td.inv{
+    border-bottom: 1px solid white;
+}
